@@ -25,8 +25,7 @@ public class countChar {
                 characters.put(letter, count);
 
         }
-//        System.out.println("The given passage is : " + passage);
-//        System.out.println("The modified passage is : " + newPassage);
+
 
         for (Map.Entry<Character, Integer> character : characters.entrySet()) {
             System.out.println(character.getKey() + " : " + character.getValue());
