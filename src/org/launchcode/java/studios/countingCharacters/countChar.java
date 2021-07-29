@@ -9,7 +9,7 @@ public class countChar {
         Scanner input = new Scanner(System.in);
 
         String passage = "";
-        passage = new Scanner(new File("C:\\Users\\arase\\OneDrive\\Desktop\\coder_girl\\Java\\java-web-dev-exercises\\src\\org\\launchcode\\java\\studios\\datafile.txt")).useDelimiter("\\Z").next();
+        passage = new Scanner(new File("C:\\Users\\arase\\OneDrive\\Desktop\\coder_girl\\Java\\java-web-dev-exercises\\src\\org\\launchcode\\java\\studios\\countingCharacters\\datafile.txt")).useDelimiter("\\Z").next();
 
 
 
