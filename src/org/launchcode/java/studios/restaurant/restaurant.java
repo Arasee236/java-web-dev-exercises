@@ -11,7 +11,7 @@ public class restaurant {
         Scanner input2 = new Scanner(System.in);
         Scanner input3 = new Scanner(System.in);
         Scanner input4 = new Scanner(System.in);
-       // Scanner input5 = new Scanner(System.in);
+        Scanner input5 = new Scanner(System.in);
 
         Menu menus = new Menu();
 
@@ -21,15 +21,15 @@ public class restaurant {
 
 
         while(true){
-            System.out.println("\n 1. View Menu \n 2. Add an item to menu \n 3. Exit");
+            System.out.println("\n 1. View Menu \n 2. Add an item to menu \n 3. Remove an item \n 4. Exit");
             userSelection = input.nextInt();
-            if(userSelection == 3){
+            if(userSelection == 4){
                 break;
             }
             else if (userSelection == 1){
                 menus.displayMenu();
             }
-            else {
+            else if(userSelection == 2){
                 System.out.println("Enter the item name : ");
                 String menuName = input1.nextLine();
                 System.out.println("Enter the description : ");
@@ -39,6 +39,12 @@ public class restaurant {
                 System.out.println("Enter the category (Appetizer/Main Course/Dessert) :");
                 String category = input4.nextLine();
                 menus.addMenu(menuName,description,price,category,currentDate.toString());
+            }
+            else{
+              //  menus.displayMenu();
+                System.out.println("Enter the name of the menu item to remove : ");
+                String menuToRemove = input5.nextLine();
+                menus.removeMenu(menuToRemove);
             }
         }
 

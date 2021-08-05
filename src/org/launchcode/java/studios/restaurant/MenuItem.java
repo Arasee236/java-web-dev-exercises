@@ -1,6 +1,5 @@
 package org.launchcode.java.studios.restaurant;
 import java.util.*;
-
 public class MenuItem {
     private String itemName;
     private Double price;

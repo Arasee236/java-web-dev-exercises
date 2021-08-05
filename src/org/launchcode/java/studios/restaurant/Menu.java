@@ -19,6 +19,21 @@ public class Menu {
         this.menu.add(objMenu);
     }
 
+    public void removeMenu(String menuName) {
+        boolean removeItem = false ;
+        if (this.menu.isEmpty()) {
+            System.out.println("The menu is empty!");
+        } else {
+            //System.out.println("Removing item...");
+            this.menu.removeIf(objMenu -> objMenu.getItemName().equalsIgnoreCase(menuName));
+
+                    System.out.println("Item Removed!");
+                    displayMenu();
+
+            }
+
+    }
+
     public void displayMenu() {
 
         if(this.menu.isEmpty()){
