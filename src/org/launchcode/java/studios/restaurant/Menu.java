@@ -29,7 +29,6 @@ public class Menu {
 
                     System.out.println("Item Removed!");
                     displayMenu();
-
             }
 
     }
